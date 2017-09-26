@@ -1,25 +1,25 @@
-//
-//  ViewController.swift
-//  NotiBannserWithWhisper
-//
-//  Created by Kittitat Rogphotong on 9/26/2560 BE.
-//  Copyright © 2560 FameSprinter. All rights reserved.
-//
-
 import UIKit
+import Whisper
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        let announcement = Announcement(title: "Your title",
+                                        subtitle: "Your subtitle",
+                                        image: UIImage(named: "avatar"))
+        
+        Whisper.show(shout: announcement,
+                     to: navigationController!,
+                     completion: {
+            print("The shout was silent.")
+        })
     }
-
-
 }
 

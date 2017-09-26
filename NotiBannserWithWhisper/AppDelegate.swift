@@ -1,11 +1,3 @@
-//
-//  AppDelegate.swift
-//  NotiBannserWithWhisper
-//
-//  Created by Kittitat Rogphotong on 9/26/2560 BE.
-//  Copyright © 2560 FameSprinter. All rights reserved.
-//
-
 import UIKit
 
 @UIApplicationMain
