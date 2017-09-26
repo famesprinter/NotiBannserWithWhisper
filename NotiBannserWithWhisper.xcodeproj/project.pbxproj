@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7C6D0434C0BF9F7E03244B47 /* Pods_NotiBannserWithWhisper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 351B26EAA52E7EFA9709BB6E /* Pods_NotiBannserWithWhisper.framework */; };
 		FB5FA6D31F7A36E300346091 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5FA6D21F7A36E300346091 /* AppDelegate.swift */; };
 		FB5FA6D51F7A36E300346091 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5FA6D41F7A36E300346091 /* ViewController.swift */; };
 		FB5FA6D81F7A36E300346091 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB5FA6D61F7A36E300346091 /* Main.storyboard */; };
@@ -15,6 +16,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		29BD64CADE4580DF82591837 /* Pods-NotiBannserWithWhisper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NotiBannserWithWhisper.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NotiBannserWithWhisper/Pods-NotiBannserWithWhisper.debug.xcconfig"; sourceTree = "<group>"; };
+		351B26EAA52E7EFA9709BB6E /* Pods_NotiBannserWithWhisper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NotiBannserWithWhisper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		393F924691A6474FF24EF514 /* Pods-NotiBannserWithWhisper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NotiBannserWithWhisper.release.xcconfig"; path = "Pods/Target Support Files/Pods-NotiBannserWithWhisper/Pods-NotiBannserWithWhisper.release.xcconfig"; sourceTree = "<group>"; };
 		FB5FA6CF1F7A36E300346091 /* NotiBannserWithWhisper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NotiBannserWithWhisper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB5FA6D21F7A36E300346091 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FB5FA6D41F7A36E300346091 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -29,17 +33,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C6D0434C0BF9F7E03244B47 /* Pods_NotiBannserWithWhisper.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5085038FCEBF1B2A1AEB094C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				29BD64CADE4580DF82591837 /* Pods-NotiBannserWithWhisper.debug.xcconfig */,
+				393F924691A6474FF24EF514 /* Pods-NotiBannserWithWhisper.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B1AF6CCE46D42521DD1F0B38 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				351B26EAA52E7EFA9709BB6E /* Pods_NotiBannserWithWhisper.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		FB5FA6C61F7A36E300346091 = {
 			isa = PBXGroup;
 			children = (
 				FB5FA6D11F7A36E300346091 /* NotiBannserWithWhisper */,
 				FB5FA6D01F7A36E300346091 /* Products */,
+				5085038FCEBF1B2A1AEB094C /* Pods */,
+				B1AF6CCE46D42521DD1F0B38 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FB5FA6E11F7A36E300346091 /* Build configuration list for PBXNativeTarget "NotiBannserWithWhisper" */;
 			buildPhases = (
+				6154520D7890320D9FC73DE3 /* [CP] Check Pods Manifest.lock */,
 				FB5FA6CB1F7A36E300346091 /* Sources */,
 				FB5FA6CC1F7A36E300346091 /* Frameworks */,
 				FB5FA6CD1F7A36E300346091 /* Resources */,
+				078D7EF7459D47E041E2917B /* [CP] Embed Pods Frameworks */,
+				1FE52F1A0CC1C77DF6D76BA6 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -130,6 +157,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		078D7EF7459D47E041E2917B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NotiBannserWithWhisper/Pods-NotiBannserWithWhisper-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1FE52F1A0CC1C77DF6D76BA6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NotiBannserWithWhisper/Pods-NotiBannserWithWhisper-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6154520D7890320D9FC73DE3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		FB5FA6CB1F7A36E300346091 /* Sources */ = {
@@ -260,6 +335,7 @@
 		};
 		FB5FA6E21F7A36E300346091 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 29BD64CADE4580DF82591837 /* Pods-NotiBannserWithWhisper.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = NotiBannserWithWhisper/Info.plist;
@@ -272,6 +348,7 @@
 		};
 		FB5FA6E31F7A36E300346091 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 393F924691A6474FF24EF514 /* Pods-NotiBannserWithWhisper.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = NotiBannserWithWhisper/Info.plist;
